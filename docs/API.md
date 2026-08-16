@@ -361,3 +361,4 @@ curl "https://bobloscript.com/v1/places/blox-fruits/scripts?limit=24"
 ---
 
 Questions or something broken? [Discord](https://discord.gg/WZMTeKNEbT)
+support@bobloscript.com

@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/31115581/README.md)
+[README (1).md](https://github.com/user-attachments/files/31115629/README.1.md)
 <div align="center">
 
 # BobloScript Hub
@@ -14,7 +14,7 @@ No registration, no API key, no key system on the Hub itself.
 
 </div>
 
-![BobloScript Hub](docs/img/home.png)
+![BobloScript Hub](docs/img/home.jpg)
 
 ---
 
@@ -59,20 +59,20 @@ Scripts themselves are **not** hosted here. They are fetched from the public API
 <summary><b>Screenshots</b></summary>
 
 ### Home
-![Home](docs/img/home.png)
+![Home](docs/img/home.jpg)
 
 ### Script catalog
-![Scripts](docs/img/scripts.png)
+![Scripts](docs/img/scripts.jpg)
 
 ### Places
-![Places](docs/img/places.png)
+![Places](docs/img/places.jpg)
 
 ### Saved and recent
-![Saved](docs/img/saved.png)
-![Recent](docs/img/recent.png)
+![Saved](docs/img/saved.jpg)
+![Recent](docs/img/recent.jpg)
 
 ### Preferences
-![Preferences](docs/img/preferences.png)
+![Preferences](docs/img/preferences.jpg)
 
 </details>
 

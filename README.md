@@ -9,7 +9,7 @@ Full searchable catalog: **[bobloscript.com/hub](https://bobloscript.com/hub)**
 ## Quick start
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/bobloscript/bobloscript-Hub/main/loader.lua"))()
+loadstring(game:HttpGet("https://bobloscript.com/hub/bobloscript-hub.lua"))()
 ```
 
 1. Copy the line above.

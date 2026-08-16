@@ -1,4 +1,4 @@
-[API.md](https://github.com/user-attachments/files/31115700/API.md)
+[API (1).md](https://github.com/user-attachments/files/31115742/API.1.md)
 # BobloScript API — v1
 
 Public read API for the BobloScript catalog: scripts, places, and search. Everything the [Hub](https://bobloscript.com/hub) shows is available through it.
@@ -360,5 +360,4 @@ curl "https://bobloscript.com/v1/places/blox-fruits/scripts?limit=24"
 
 ---
 
-Questions or something broken? [Discord](https://discord.gg/WZMTeKNEbT)
-support@bobloscript.com
+Questions or something broken? [Discord](https://discord.gg/WZMTeKNEbT) · [support@bobloscript.com](mailto:support@bobloscript.com)

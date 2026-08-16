@@ -197,7 +197,7 @@ Returns the script source. Not wrapped in `result`.
 
 ## `POST /v1/scripts/:idOrSlug/execute`
 
-Records a run event. No request body. Repeat calls for the same script from the same client inside 15 seconds are ignored rather than rejected.
+Records a run event. No request body. Repeat calls for the same script from the same client within a short window are deduplicated.
 
 ```json
 { "ok": true, "counted": true }

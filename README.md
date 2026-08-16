@@ -1,8 +1,20 @@
-# Roblox Script Hub — BobloScript
+[README.md](https://github.com/user-attachments/files/31115581/README.md)
+<div align="center">
 
-Free Roblox scripts for 300+ games. Keyless and key-system scripts, auto farm, ESP, kill aura, and GUI tools — collected in one loader and kept up to date.
+# BobloScript Hub
 
-Full searchable catalog: **[bobloscript.com/hub](https://bobloscript.com/hub)**
+**Search and run Roblox scripts from inside your executor.**
+No registration, no API key, no key system on the Hub itself.
+
+[![Last commit](https://img.shields.io/github/last-commit/bobloscript/bobloscript-Hub)](https://github.com/bobloscript/bobloscript-Hub/commits)
+[![License](https://img.shields.io/github/license/bobloscript/bobloscript-Hub)](LICENSE)
+[![Website](https://img.shields.io/badge/web-bobloscript.com-4ade80)](https://bobloscript.com)
+
+[Catalog](https://bobloscript.com/hub) · [API docs](docs/API.md) · [Discord](https://discord.gg/WZMTeKNEbT) · [Telegram](https://t.me/roblox_scripts)
+
+</div>
+
+![BobloScript Hub](docs/img/home.png)
 
 ---
 
@@ -13,27 +25,56 @@ loadstring(game:HttpGet("https://bobloscript.com/hub/bobloscript-hub.lua"))()
 ```
 
 1. Copy the line above.
-2. Paste it into your executor.
-3. Press Execute — the hub menu opens with the game list.
+2. Paste it into a compatible Roblox executor and press Execute.
+3. The Hub window opens — search a game or a script, open it, run it.
 
-The hub detects the current game automatically and loads the matching script.
+> [!WARNING]
+> Scripts in the catalog are submitted by community members. BobloScript does not guarantee that any script is safe. High-risk scripts show an extra warning and a mandatory wait before execution — read what you are running.
 
 ---
 
-## Supported games
+## What's in this repository
 
-| Game | Access | Features |
-|---|---|---|
-| [Murder Mystery 2](https://bobloscript.com/place/murder-mystery-2) | No key | Auto farm, ESP, trade tools |
-| [Blox Fruits](https://bobloscript.com/place/blox-fruits) | No key | Auto farm level, fruit notifier |
-| [Grow a Garden 2](https://bobloscript.com/place/grow-a-garden-2) | Key system | Auto plant, auto sell |
-| [Build A Ring Farm](https://bobloscript.com/place/build-a-ring-farm) | No key | Auto farm, auto seeds, auto upgrade |
-| [Survive Zombie Arena](https://bobloscript.com/place/survive-zombie-arena) | No key | Kill aura, god mode |
-| [Slime RNG](https://bobloscript.com/place/slime-rng) | No key | Auto roll, auto collect |
+This repo holds the **source of the loader** shown above, so you can read exactly what that one line does before you run it. It is a mirror of the file served from `bobloscript.com/hub/bobloscript-hub.lua`.
 
-<!-- Замените строки на свои реальные игры и функции. Ссылки должны вести на существующие страницы /place/ — битые ссылки хуже, чем их отсутствие. -->
+Scripts themselves are **not** hosted here. They are fetched from the public API at runtime, which means a broken script can be fixed or pulled without anyone re-copying the loader.
 
-Browse every game: [bobloscript.com/places](https://bobloscript.com/places)
+---
+
+## Features
+
+| | |
+|---|---|
+| **Search** | Full catalog search by game, script, or function |
+| **Places** | Browse by Roblox game with per-place script counts |
+| **Access filters** | No Key / Key System, sortable by newest, updated, views, or trending |
+| **Saved** | Bookmark scripts locally on the device |
+| **Recent** | History of what you ran, with a quick re-run |
+| **Safety checks** | Confirm-before-execute, 15-second wait on high-risk scripts |
+| **Preferences** | Light/dark theme, compact rows, reduced motion, clear local data |
+
+---
+
+<details>
+<summary><b>Screenshots</b></summary>
+
+### Home
+![Home](docs/img/home.png)
+
+### Script catalog
+![Scripts](docs/img/scripts.png)
+
+### Places
+![Places](docs/img/places.png)
+
+### Saved and recent
+![Saved](docs/img/saved.png)
+![Recent](docs/img/recent.png)
+
+### Preferences
+![Preferences](docs/img/preferences.png)
+
+</details>
 
 ---
 
@@ -44,47 +85,46 @@ Browse every game: [bobloscript.com/places](https://bobloscript.com/places)
 **macOS** — Macsploit
 **iOS** — Delta iOS
 
-Not sure whether your executor still works after the last Roblox patch? Check the live status page: [bobloscript.com/executors](https://bobloscript.com/executors)
+> [!TIP]
+> Script not running at all? Check whether your executor still works after the latest Roblox patch before reporting it broken: [executor status](https://bobloscript.com/executors)
 
-<!-- Поправьте URL, если страница статуса лежит по другому адресу. -->
-
----
-
-## Keyless vs key-system scripts
-
-**No key** — runs immediately, nothing to unlock. Every script marked `NO KEY` in the catalog works this way.
-
-**Key system** — the script author gates access behind a key link. The hub shows which scripts need one before you load them, so you always know what you are opening.
-
-Filter the catalog by access type: [no-key scripts only](https://bobloscript.com/scripts?access=no-key)
+<!-- Проверьте URL страницы статуса — здесь должен стоять реальный адрес. -->
 
 ---
 
-## Updates
+## Public API
 
-Scripts break when games get patched. This hub is re-checked regularly and non-working entries are marked rather than silently left in place.
+The catalog behind the Hub is open. No registration, no API key — rate limits are applied per IP.
 
-- Latest additions: [bobloscript.com/scripts](https://bobloscript.com/scripts)
-- Recently updated: [bobloscript.com/scripts?sort=updated](https://bobloscript.com/scripts?sort=updated)
+```bash
+curl "https://bobloscript.com/v1/search?q=blox+fruits"
+```
+
+Build your own hub, a Discord bot, or a status page on top of it: **[full API reference →](docs/API.md)**
 
 ---
 
-## Publish your own scripts
+## Publish your scripts
 
-BobloScript is community-driven. Publishing gives you a public profile, view counts, and readers who follow your releases.
+BobloScript is community-driven. Publishing gives you a public profile, view and like counts, and readers who follow your releases.
 
 → [Publish a script](https://bobloscript.com/publish)
 
 ---
 
-## Community
+## Links
 
-- Discord: https://discord.gg/WZMTeKNEbT
-- Telegram: https://t.me/roblox_scripts
-- Website: https://bobloscript.com
+- Website — https://bobloscript.com
+- Discord — https://discord.gg/WZMTeKNEbT
+- Telegram — https://t.me/roblox_scripts
 
 ---
 
+## License
+
+[MIT](LICENSE) — applies to the loader source in this repository only.
+Scripts published on BobloScript belong to their respective authors.
+
 ## Disclaimer
 
-This project is not affiliated with, endorsed by, or connected to Roblox Corporation. Roblox is a trademark of Roblox Corporation. Scripts are provided by community members; use them at your own risk and on alternate accounts.
+Not affiliated with, endorsed by, or connected to Roblox Corporation. Roblox is a trademark of Roblox Corporation. Use scripts at your own risk.

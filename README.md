@@ -1,4 +1,3 @@
-[README (1).md](https://github.com/user-attachments/files/31115629/README.1.md)
 <div align="center">
 
 # BobloScript Hub

@@ -79,10 +79,10 @@ Scripts themselves are **not** hosted here. They are fetched from the public API
 
 ## Compatible executors
 
-**Windows** — Solara, Xeno, Wave, Cryptic, Synapse Z, AWP.GG
-**Android** — Delta, Codex, Cryptic, Trigon Evo, Illusion
-**macOS** — Macsploit
-**iOS** — Delta iOS
+- **Windows** — Solara, Xeno, Wave, Cryptic, Synapse Z, AWP.GG
+- **Android** — Delta, Codex, Cryptic, Trigon Evo, Illusion
+- **macOS** — Macsploit
+- **iOS** — Delta iOS
 
 > [!TIP]
 > Script not running at all? Check whether your executor still works after the latest Roblox patch before reporting it broken: [executor status](https://bobloscript.com/executors)
